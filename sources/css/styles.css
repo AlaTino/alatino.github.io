@@ -1,7 +1,12 @@
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: steelblue;
+    border-radius: 5px;
 }
+
+.banner-image {
+    filter: contrast(200%);
+  }
 
 .header h1 {
     text-align: center;
@@ -36,6 +41,11 @@
     color: antiquewhite;
 }
 
+.palm {
+    text-align: center;
+    height: 100px;
+}
+
 .intro {
     text-align: center;
 }
@@ -47,12 +57,39 @@ img {
     
 }
 
-.intro h2 {
+h2 {
     text-align: center;
     margin: 30px 50px;
 }
 
-footer {
+.copy {
     text-align: right;
     color: gray;
+}
+
+.contact {
+    position: relative;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+
+.contact a {
+    background-color: blanchedalmond;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 14;
+}
+
+.contact a:hover {
+    background-color: sandybrown;
+    color: teal;
+}
+
+.contact a.active {
+    background-color: aquamarine;
+    color: antiquewhite;
 }
