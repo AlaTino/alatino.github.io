@@ -90,5 +90,10 @@ body {
 
 #main {
     float: right;
-    width: 350px;
+}
+
+#main p {
+    padding: 30px;
+    line-height: 1.5;
+    margin: 50px;
 }
