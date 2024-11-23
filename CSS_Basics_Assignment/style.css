@@ -61,3 +61,20 @@ body {
     margin-right: auto;
     background-image: linear-gradient(white, silver);
 }
+
+#navbar {
+    float: left;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#main {
+    float: right;
+    width: 350px;
+}
