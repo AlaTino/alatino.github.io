@@ -70,6 +70,10 @@ img {
     text-decoration: none;
 }
 
+#main-navbar a:hover {
+    color: red;
+}
+
 body {
     width: 90%;
     margin-left: auto;
