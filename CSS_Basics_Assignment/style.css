@@ -29,22 +29,16 @@
 }
 
 h1 {
-    border-style: outset;
+    background-color: gray;
     border-color: silver;
-    border-width: 5px;
-    border-radius: 10px;
     padding: 2%;
     text-align: center;
+    margin: 0px;
 }
 
 p {
     background-color: rgb(255, 252, 60);
-    border-style: outset;
-    border-color: black;
-    border-width: 5px;
-    border-radius: 10px;
     padding: 3%;
-    margin: 5%;
 }
 
 img {
@@ -82,23 +76,33 @@ body {
 }
 
 #vertical-navbar {
+    position: relative;
     float: left;
+    background-color: darkgray;
+    width: 30%;
+    height: 420px;
 }
 
 #vertical-navbar li {
     list-style: none;
+    line-height: 2;
 }
 
 #vertical-navbar a {
     text-decoration: none;
 }
 
+#vertical-navbar a:hover {
+    color: red;
+}
+
 #main {
-    float: right;
+    float: left;
 }
 
 #main p {
     padding: 30px;
     line-height: 1.5;
-    margin: 50px;
+    position: relative;
+    margin: 0px;
 }
