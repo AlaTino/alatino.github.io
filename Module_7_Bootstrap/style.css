@@ -1,0 +1,81 @@
+
+
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    font-size: 20px; 
+}
+
+.navbar {
+    padding: 15px 0px 15px 0px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.navbar-nav li a:hover {
+    color: darkgoldenrod !important;
+}
+
+
+.bg-1 img {
+    max-width: 200px;
+    display: inline;
+}
+
+.container-fluid {
+    padding: 70px 0px 70px 0px;
+}
+
+.bg-1 {
+    background-color: lightgoldenrodyellow;
+    color: darkslategray;
+}
+
+.bg-2 {
+    background-color: darkslategray;
+    color: bisque;
+}
+
+.bg-3 {
+    background-color: whitesmoke;
+    color: darkslategray;
+}
+
+.glyphicon-search {
+    padding-right: 5px;
+}
+
+.row img {
+    max-width: 100%;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: darkslategray;
+}
+
+.col-sm-4 {
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
