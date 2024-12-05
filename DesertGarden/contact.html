@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Contact Us! - Desert Garden</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top"> <!-- Navbar -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html"><img id="Logo-banner" src="./images/logo_navbar.png" alt="Desert Garden logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./aboutus.html">ABOUT US</a></li>
+                    <li><a href="./menus.html">SEASONAL MENUS</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid intro text-center">
+        <img src="./images/logo_banner.png" alt="Desert Garden logo">
+    </div>
+
+    <div class="container"> <!-- Contact Form -->
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>We love creating new stories!</em></p>
+        <div class="row test">
+            <div class="col-md-4">
+                <p>Questions/Requests? Contact us.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>Helsinki, Finland</p>
+                <p><span class="glyphicon glyphicon-phone"></span>Phone: +358 40 1234567</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: desertgarden@mail.com</p>
+            </div>
+            <div class="col-md-8">
+                <form id="contactForm" novalidate>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Let us know he we can help you!" rows="5"></textarea>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <h3 class="text-center">Reviews from our clients</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Pepper P.</a></li>
+            <li><a data-toggle="tab" href="#review1">Daisy D.</a></li>
+            <li><a data-toggle="tab" href="#review2">Mickey M.</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h2>Pepper P, Assistant</h2>
+                <p>"Desert Garden exceeded all our expectations! The food was absolutely delicious, with every dish bursting with fresh, local flavors. Our guests were raving about the amazing presentation and the attention to detail. The team was incredibly professional, and their passion for quality truly shone through. We can't wait to have them cater our next event!"</p>
+            </div>
+            <div id="review1" class="tab-pane fade">
+                <h2>Daisy D, Actress</h2>
+                <p>"We chose Desert Garden for our wedding, and it was the best decision we made. The menu they crafted was perfectly tailored to our tastes and the season, and the execution was flawless. Our guests were blown away by the delicious food and the beautiful setup. The staff went above and beyond to ensure everything was perfect. Highly recommend!"</p>
+            </div>
+            <div id="review2" class="tab-pane fade">
+                <h2>Mickey M, CEO</h2>
+                <p>"Desert Garden's catering service made our corporate event a huge success. The dishes were not only exquisite in flavor but also showcased the best of local produce. The team was a pleasure to work with, accommodating all our requests with ease. Our clients and employees were thoroughly impressed, and we received countless compliments on the food. Desert Garden is a true gem in the catering world!"</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center"> <!-- Footer -->
+        <a class="up-arrow" href="./index.html" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p>Website created by Tino Alakari &copy; 2024</p>
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </p>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+    
+    <script src="scrollToTop.js"></script>
+
+    <script src="formValidation.js"></script>
+</body>
+</html>

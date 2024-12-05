@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Seasonal Menus - Desert Garden</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top"> <!-- Navbar -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html"><img id="Logo-banner" src="./images/logo_navbar.png" alt="Desert Garden logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./aboutus.html">ABOUT US</a></li>
+                    <li><a href="./menus.html">SEASONAL MENUS</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid intro text-center">
+        <img src="./images/logo_banner.png" alt="Desert Garden logo">
+    </div>
+    <div class="bg-1"> <!-- Menus -->
+        <div class="container">
+            <h3 class="text-center">Seasonal Menus</h3>
+            <p class="text-center">Choose one of our pre-made menus<br>
+                Or use the contact form below to create your own story!</p>
+            <div class="row text-center"> <!-- Booking -->
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="./images/falafel.jpg" alt="Plate of Falafel and Hummus">
+                        <div class="list-group text-center">    
+                            <a href="#menu" class="list-group-item" data-toggle="collapse"><strong>Mediterranean Medley</strong></a>
+                            <div id="menu" class="collapse">
+                                <p>Beetroot Hummus</p>
+                                <p>Baba Ganoush</p>
+                                <p>Falafel & Tzatziki</p>
+                                <p>Roasted Potatoes</p>
+                            </div>
+                            <p>$49 / person</p>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="./images/salad.jpg" alt="Green Goddess Salad">
+                        <div class="list-group text-center">
+                            <a href="#menu1" class="list-group-item" data-toggle="collapse"><strong>Harvest Cornucopia</strong></a>
+                            <div id="menu1" class="collapse">
+                                <p>Roasted Cauliflower & Brown Butter Hollandaise</p>
+                                <p>Tomato Tartar</p>
+                                <p>Green Goddess Salad</p>
+                                <p>Charcuterie</p>
+                            </div>
+                            <p>$49 / person</p>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="./images/burrata.jpg" alt="Burrata & Peaches">
+                        <div class="list-group text-center">
+                            <a href="#menu2" class="list-group-item" data-toggle="collapse"><strong>Springtime Fancy</strong></a>
+                            <div id="menu2" class="collapse">
+                                <p>Seabass Crudo</p>
+                                <p>Coconut Shrimp</p>
+                                <p>Grilled Zesty Asparagus</p>
+                                <p>Burrata, Peaches & Cherry Tomatoes</p>
+                            </div>
+                            <p>$49 / person</p>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal" role="dialog"> <!-- Modal-->
+                <div class="modal-dialog">
+                    <div class="modal-content"> <!-- Modal Content-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4><span class="glyphicon glyphicon-lock"></span>Book Event</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="psw"><span class="glyphicon glyphicon-glass"></span>Reservation, $49 per person</label>
+                                    <input type="number" class="form-control" id="psw" placeholder="Amount of guests?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="username"><span class="glyphicon glyphicon-envelope"></span>Contact E-mail</label>
+                                    <input type="text" class="form-control" id="username" placeholder="example@email.com">
+                                </div>
+                                <button type="submit" class="btn btn-block">Reserve
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                                <span class="glyphicon glyphicon-remove"></span>Cancel
+                            </button>
+                            <p>Need <a href="#contact-form">Help?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact-form"> <!-- Contact Form -->
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>We love creating new stories!</em></p>
+        <div class="row test">
+            <div class="col-md-4">
+                <p>Questions/Requests? Contact us.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>Helsinki, Finland</p>
+                <p><span class="glyphicon glyphicon-phone"></span>Phone: +358 40 1234567</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: desertgarden@mail.com</p>
+            </div>
+            <div class="col-md-8">
+                <form id="contactForm" novalidate>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Let us know he we can help you!" rows="5"></textarea>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center"> <!-- Footer -->
+        <a class="up-arrow" href="./index.html" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p>Website created by Tino Alakari &copy; 2024</p>
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </p>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+    
+    <script src="scrollToTop.js"></script>
+
+    <script src="formValidation.js"></script>
+</body>
+</html>

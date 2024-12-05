@@ -1,0 +1,277 @@
+* {
+    font-family: Lora, serif;
+}
+
+
+#Logo-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+
+.navbar li a, .navbar .navbar-brand {
+    color: darkslategray !important;
+}
+
+.navbar-nav li a:hover {
+    color: black !important;
+    transition: 0.1s;
+    font-size: 13px;
+}
+
+.navbar-nav li:active a {
+    color: black !important;
+    background-color: lightgoldenrodyellow !important;
+}
+
+.introduction {
+    background-image: url(./images/intro.jpg);
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.introduction img {
+    max-width: 100%;
+    height: auto;
+    opacity: 80%;
+}
+
+.introduction h3 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2;
+    font-family: Lora, serif;
+}
+
+.introduction h4 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    font-family: Lora, serif;
+}
+
+.intro {
+    background-image: url(./images/intro.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.intro img {
+    max-width: 20%;
+    height: auto;
+    opacity: 80%;
+}
+
+.intro-text {
+    background-color: darkslategray;
+    color: lightgoldenrodyellow;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.intro-text h3 {
+    font-size: 40px;
+}
+
+.intro-text h4 {
+    font-size: 22px;
+}
+
+.intro-text p {
+    font-size: 18px;
+}
+
+.container {
+    padding: 80px 120px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.staff {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+
+.staff:hover {
+    border-color: #f1f1f1;
+}
+
+
+.carousel-inner img {
+    -webkit-filter: saturate(110%); 
+    filter: saturate(110%);
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    
+}
+
+.carousel-caption {
+    color: lightgoldenrodyellow !important;
+    background-color: hsla(159, 12%, 29%, 0.6);
+    padding-top: 0 !important;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.aboutus p {
+    font-size: 20px;
+}
+
+.bg-1 {
+    color: darkslategrey;
+}
+
+.bg-1 p {
+    font-style: italic;
+}
+
+.bg-1 li {
+    color: darkslategray;
+}
+
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: darkslategray;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: darkslategray;
+    color: lightgoldenrodyellow;
+    border-radius: 0;
+    transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: lightgoldenrodyellow;
+    color: darkslategray;
+    font-size: 16px;
+    margin: 0;
+}
+
+.modal-header h4, .close {
+    background-color: darkslategray;
+    color: lightgoldenrodyellow !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}
+
+.form-group {
+   color: darkslategray;
+}
+
+
+.modal-footer p {
+    color: darkslategray;
+}
+
+.nav-tabs li a {
+    color: slategrey;
+}
+
+footer {
+    background-color: darkslategray;
+    color: lightgoldenrodyellow;
+    padding: 32px;
+}
+
+footer a {
+    color: lightgoldenrodyellow;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+.fab {
+    font-size: 24px;
+    margin-right: 10px;
+    color: lightgoldenrodyellow; 
+    text-decoration: none;
+}
+
+.fab:hover {
+    color: #777;
+}
+
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 1px solid lightgoldenrodyellow;
+    outline: none;
+    background-color: darkslategray;
+    color: lightgoldenrodyellow;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: gray;
+}
